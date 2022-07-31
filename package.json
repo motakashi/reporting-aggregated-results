@@ -1,0 +1,23 @@
+{
+  "name": "reporting-aggregated-results",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motakashi/reporting-aggregated-results.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motakashi/reporting-aggregated-results/issues"
+  },
+  "homepage": "https://github.com/motakashi/reporting-aggregated-results#readme",
+  "dependencies": {
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3"
+  }
+}
