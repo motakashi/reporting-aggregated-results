@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sample": "./node_modules/.bin/env-cmd -f .env node test.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
   },
   "homepage": "https://github.com/motakashi/reporting-aggregated-results#readme",
   "dependencies": {
+    "env-cmd": "^10.1.0",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.21.3"
+    "sequelize": "^6.21.3",
+    "sequelize-cli": "^6.4.1"
   }
 }
