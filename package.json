@@ -19,8 +19,6 @@
   "homepage": "https://github.com/motakashi/reporting-aggregated-results#readme",
   "dependencies": {
     "env-cmd": "^10.1.0",
-    "mysql2": "^2.3.3",
-    "sequelize": "^6.21.3",
-    "sequelize-cli": "^6.4.1"
+    "mysql2": "^2.3.3"
   }
 }
