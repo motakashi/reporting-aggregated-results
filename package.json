@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sample": "./node_modules/.bin/env-cmd -f .env node test.js"
+    "prettier": "prettier --write 'src/*.js'",
+    "sample": "./node_modules/.bin/env-cmd -f .env node src/index.js $(cat .db_param.json)"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/motakashi/reporting-aggregated-results#readme",
   "dependencies": {
+    "commander": "^9.4.0",
+    "dayjs": "^1.11.4",
     "env-cmd": "^10.1.0",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "prettier": "^2.7.1"
   }
 }
