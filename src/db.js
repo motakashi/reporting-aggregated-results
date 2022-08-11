@@ -3,12 +3,14 @@ const dayjs = require("dayjs");
 const timezone = require("dayjs/plugin/timezone");
 const utc = require("dayjs/plugin/utc");
 
-const mysql = require("mysql2");
+const mysql = require("mysql");
 
 module.exports = class Db {
   constructor(param, password) {
-    if (!password) {
-      console.log("パスワードが未設定です");
+
+    if (!param || !password){
+      console.log('DBの接続情報がパラメータで渡されていません');
+      throw new Error('DBの接続情報がパラメータで渡されていません');
     }
 
     //DB接続情報
