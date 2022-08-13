@@ -45,6 +45,7 @@ module.exports = class Db {
         return resolve();
       });
     }).catch((error) => {
+      console.log(error);
       throw new Error("接続に失敗しました");
     });
   }
@@ -70,7 +71,8 @@ module.exports = class Db {
         const results = rows.map((row) => ({
           id: row.id,
           title: row.title,
-          purchased: dayjs.utc(row.purchased).local().format(),
+          purchased: dayjs.utc(row.purchased).local().format('YYYY-MM-DD HH:mm:ss'),
+          price: row.price
         }));
 
         return resolve(results);
